@@ -29,7 +29,7 @@ class hparams:
 	sch_g = 0.5
 	sch_stop = 800e3
 	max_iter = 1000e3
-	batch_size = 8
+	batch_size = 4  # 8
 	gn = 10
 	n = 3
 	iters_per_log = n*(10//n)

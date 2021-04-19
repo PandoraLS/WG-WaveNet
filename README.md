@@ -29,6 +29,7 @@ Visit the [demopage](https://bogihsu.github.io/WG-WaveNet/) for audio samples.
 
 ```bash
 python3 train.py --data_dir=<dir/to/dataset> --ckpt_dir=<dir/to/models>
+python3 train.py --data_dir=/home/aone/lisen/SpeechData/LJSpeech-1.1/ --ckpt_dir=output/ckpt/
 ```
 
 3. For training using a pretrained model, run the following command.
@@ -41,6 +42,9 @@ python3 train.py --data_dir=<dir/to/dataset> --ckpt_dir=<dir/to/models> --ckpt_p
 
 ```bash
 python3 train.py --data_dir=<dir/to/dataset> --ckpt_dir=<dir/to/models> --log_dir=<dir/to/logs>
+python3 train.py --data_dir=/home/aone/lisen/SpeechData/LJSpeech-1.1/ --ckpt_dir=output/ckpt/ --log_dir=output/logs/
+tensorboard --logdir output/logs/
+
 ```
 
 ## Inference
@@ -59,3 +63,5 @@ We will combine this vocoder with Tacotron2. More information and Colab demo wil
 ## References
 - [WaveGlow by NVIDIA](https://github.com/NVIDIA/waveglow)
 - [ParallelWaveGAN by kan-bayashi](https://github.com/kan-bayashi/ParallelWaveGAN)
+
+## 操作流程
